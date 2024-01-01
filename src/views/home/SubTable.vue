@@ -34,8 +34,8 @@
                   <label class="form-label" for="remote">远程配置</label>
                   <select class="form-select" id="remote" @change="selectRemoteConfig">
                     <option :value="remoteConfigUrl">{{ remoteConfigName }}</option>
-                    <option :value="remoteConfigUrl">{{ remoteConfigName }}</option>
-                    <option :value="remoteConfigUrl">{{ remoteConfigName }}</option>
+                    <option :value="remoteConfigUrlFa">{{ remoteConfigNameFa }}</option>
+                    <option :value="remoteConfigUrlFb">{{ remoteConfigNameFb }}</option>
                     <option value="manual">自定义远程配置地址</option>
                   </select>
                 </div>
