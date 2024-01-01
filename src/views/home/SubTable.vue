@@ -34,8 +34,8 @@
                   <label class="form-label" for="remote">远程配置</label>
                   <select class="form-select" id="remote" @change="selectRemoteConfig">
                     <option :value="remoteConfigUrl">{{ remoteConfigName }}</option>
-                    <option :value="remoteConfigUrlFa">{{ remoteConfigNameFa }}</option>
-                    <option :value="remoteConfigUrlFb">{{ remoteConfigNameFb }}</option>
+                    <option :value="remoteConfigUrl1">{{ remoteConfigName1 }}</option>
+                    <option :value="remoteConfigUrl2">{{ remoteConfigName2 }}</option>
                     <option value="manual">自定义远程配置地址</option>
                   </select>
                 </div>
@@ -148,7 +148,11 @@ export default {
       apiUrl: process.env.VUE_APP_API_URL || window.config.apiUrl,
       shortUrl: process.env.VUE_APP_SHORT_URL || window.config.shortUrl,
       remoteConfigName: process.env.VUE_APP_REMOTE_CONFIG_NAME || window.config.remoteConfigName,
+      remoteConfigName1: process.env.VUE_APP_REMOTE_CONFIG_NAME1 || window.config.remoteConfigName1,
+      remoteConfigName2: process.env.VUE_APP_REMOTE_CONFIG_NAME2 || window.config.remoteConfigName2,
       remoteConfigUrl: process.env.VUE_APP_REMOTE_CONFIG_URL || window.config.remoteConfigUrl,
+      remoteConfigUrl1: process.env.VUE_APP_REMOTE_CONFIG_URL1 || window.config.remoteConfigUrl1,
+      remoteConfigUrl2: process.env.VUE_APP_REMOTE_CONFIG_URL2 || window.config.remoteConfigUrl2,
       moreConfig: this.DEFAULT_MORECONFIG,
       isShowMoreConfig: false,
       isShowManualApiUrl: false,
