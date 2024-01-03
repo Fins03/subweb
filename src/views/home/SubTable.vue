@@ -23,6 +23,7 @@
                   <select class="form-select" id="api" @change="selectApi">
                     <option :value="apiUrl">
                       {{ apiUrl }}
+                      </option>
                     <option :value="apiUrl1">
                       {{ apiUrl1 }}
                     </option>
