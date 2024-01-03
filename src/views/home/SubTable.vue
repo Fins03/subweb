@@ -23,6 +23,8 @@
                   <select class="form-select" id="api" @change="selectApi">
                     <option :value="apiUrl">
                       {{ apiUrl }}
+                    <option :value="apiUrl1">
+                      {{ apiUrl1 }}
                     </option>
                     <option value="manual">自定义后端 API 地址</option>
                   </select>
@@ -146,6 +148,7 @@ export default {
         { value: 'loon', text: 'Loon' },
       ],
       apiUrl: process.env.VUE_APP_API_URL || window.config.apiUrl,
+      apiUrl1: process.env.VUE_APP_API_URL1 || window.config.apiUrl1,
       shortUrl: process.env.VUE_APP_SHORT_URL || window.config.shortUrl,
       remoteConfigName: process.env.VUE_APP_REMOTE_CONFIG_NAME || window.config.remoteConfigName,
       remoteConfigName1: process.env.VUE_APP_REMOTE_CONFIG_NAME1 || window.config.remoteConfigName1,
